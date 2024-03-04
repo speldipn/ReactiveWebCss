@@ -1,11 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>Gallery</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="" />
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+  <link rel="apple-touhc-icon-precomposed" href="images/favicon/flat-design-touch.png" />
+  <script src="js/jquery.min.js"></script>
+  <style>
+    /* Mobile: 320px, Tablet: 768px, PC: 1024px */
+
+    #wrap {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    #wrap section {
+      box-sizing: border-box;
+    }
+
+    /* Tablet */
+    @media all and (min-width:768px) { 
+      #wrap {
+        flex-flow: row wrap;
+      }
+    }
+    /* PC */
+    @media all and (min-width:960px) {
+      #wrap {
+        position: relative;
+        width: 90%;
+      }
+     }
+  </style>
 </head>
 <body>
-  
+  <script>
+    $('document').ready(function() {
+      console.log("ready...");
+    })
+  </script>
+  <div id="wrap">
+  </div>
 </body>
 </html>
